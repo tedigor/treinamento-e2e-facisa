@@ -1,0 +1,36 @@
+<div id="calc-body" fxFlex="20">
+    <div id="screen">{{ currentNumber }}</div>
+    <div fxLayout="column" fxLayoutAlign="start space-around">
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <button mat-button name="btn_7" (click)="append('7')" class="btn btn-wide">7</button>
+            <button mat-button name="btn_8" (click)="append('8')" class="btn btn-wide">8</button>
+            <button mat-button name="btn_9" (click)="append('9')" class="btn btn-wide">9</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <button mat-button name="btn_4" (click)="append('4')" class="btn btn-wide">4</button>
+            <button mat-button name="btn_5" (click)="append('5')" class="btn btn-wide">5</button>
+            <button mat-button name="btn_6" (click)="append('6')" class="btn btn-wide">6</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <button mat-button name="btn_1" (click)="append('1')" class="btn btn-wide">1</button>
+            <button mat-button name="btn_2" (click)="append('2')" class="btn btn-wide">2</button>
+            <button mat-button name="btn_3" (click)="append('3')" class="btn btn-wide">3</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center">
+            <button mat-button name="btn_0" (click)="append('0')" class="btn btn-wide">0</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <button mat-button name="btn_+" (click)="append('+')" class="btn btn-med">+</button>
+            <button mat-button name="btn_-" (click)="append('-')" class="btn btn-med">-</button>
+            <button mat-button name="btn_*" (click)="append('*')" class="btn btn-med">*</button>
+            <button mat-button name="btn_/" (click)="append('/')" class="btn btn-med">/</button>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <span fxFlex></span>
+            <button mat-button name="btn_=" (click)="append('=')" class="btn btn-med">=</button>
+            <button mat-button name="btn_c" (click)="append('C')" class="btn btn-med">C</button>
+            <span fxFlex></span>
+        </div>
+    </div>
+
+</div>
