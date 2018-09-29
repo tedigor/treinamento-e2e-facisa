@@ -13,8 +13,8 @@ describe('Testa o valor de operações matemáticas', function(){
 
     it('realizar conta de adição', function(){
         browser.driver.manage().window().maximize();
-        primeiroCampo.sendKeys(2);
-        segundoCampo.sendKeys(3);
+        // primeiroCampo.sendKeys(2);
+        
         botao.click();
         
         expect(resultado.getText()).toEqual('5');
